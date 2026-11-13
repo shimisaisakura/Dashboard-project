@@ -8,7 +8,7 @@ import { DarkModeToggle } from "./DarkModeToggle";
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex justify-between items-center pl-7">
+    <nav className="w-full flex justify-between items-center pl-7 pr-4">
       <div>
         <Field>
           <FieldLabel htmlFor="input-button-group" className="sr-only">

@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Total({ card }: { card: TotalCards }) {
   return (
-    <div className="bg-white rounded-lg px-3 py-2 flex-1 font-nunito font-normal shadow-xl">
+    <div className="bg-white dark:bg-black rounded-lg px-3 py-2 flex-1 font-nunito font-normal shadow-xl">
       <div className="flex justify-between items-center pb-2">
         <div>
           <div>{card.title}</div>
