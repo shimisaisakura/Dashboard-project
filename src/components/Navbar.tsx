@@ -1,9 +1,10 @@
 import { Search } from "lucide-react";
 import { Button } from "./ui/button";
-import { ButtonGroup } from "./ui/button-group";
+
 import { Field, FieldLabel } from "./ui/field";
 import { Input } from "./ui/input";
 import ProfileAvatar from "./ProfileAvatar";
+import { DarkModeToggle } from "./DarkModeToggle";
 
 export default function Navbar() {
   return (
@@ -25,7 +26,8 @@ export default function Navbar() {
           </div>
         </Field>
       </div>
-      <div>
+      <div className="flex gap-4">
+        <DarkModeToggle />
         <ProfileAvatar />
       </div>
     </nav>

@@ -1,10 +1,9 @@
 import Total from "@/components/dashboard/Total";
-import { Button } from "@/components/ui/button";
 import { dataTotalCards } from "./_data/dashboardData";
 
 export default function Page() {
   return (
-    <div className="bg-slate-100">
+    <div className="bg-slate-100 min-h-full">
       <div className="text-3xl font-bold px-6 pt-7">
         <h1>Dashboard</h1>
       </div>
