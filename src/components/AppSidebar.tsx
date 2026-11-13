@@ -13,7 +13,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "./ui/sidebar";
-import { ChevronDown, Home, LayoutDashboardIcon, Plus } from "lucide-react";
+import { Home, LayoutDashboardIcon, Plus } from "lucide-react";
 
 import Link from "next/link";
 
