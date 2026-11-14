@@ -18,12 +18,12 @@ import { Home, LayoutDashboardIcon, Plus } from "lucide-react";
 import Link from "next/link";
 
 const items = [
-  { title: "Dashboard", href: "#", icon: LayoutDashboardIcon },
-  { title: "Products", href: "#", icon: LayoutDashboardIcon },
-  { title: "Favorites", href: "#", icon: LayoutDashboardIcon },
-  { title: "Inbox", href: "#", icon: LayoutDashboardIcon },
-  { title: "Order Lists", href: "#", icon: LayoutDashboardIcon },
-  { title: "Product Stock", href: "#", icon: LayoutDashboardIcon },
+  { title: "Dashboard", href: "/", icon: LayoutDashboardIcon },
+  { title: "Products", href: "/", icon: LayoutDashboardIcon },
+  { title: "Favorites", href: "/", icon: LayoutDashboardIcon },
+  { title: "Inbox", href: "/", icon: LayoutDashboardIcon },
+  { title: "Order Lists", href: "/", icon: LayoutDashboardIcon },
+  { title: "Product Stock", href: "/", icon: LayoutDashboardIcon },
 ];
 export default function AppSidebar() {
   return (
@@ -55,10 +55,10 @@ export default function AppSidebar() {
                 {items.map((project) => (
                   <SidebarMenuItem key={project.title}>
                     <SidebarMenuButton asChild>
-                      <a href={project.href}>
+                      <Link href={project.href}>
                         <project.icon />
                         <span>{project.title}</span>
-                      </a>
+                      </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 ))}
